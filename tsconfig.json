@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "esnext",
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      
+      "@config/*": ["config/*"],
+      "@customTypes/*": ["types/*"],
+    },
+    "rootDir": ".",          // where your TS files are
+    "outDir": "dist",        // compiled JS goes here
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": ["**/*.ts", "tsconfig-paths-loader.mjs","**/*.hbs"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "mail-service-consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "type": "commonjs",
+  "imports": {
+    "@config/*": "./config/*",
+    "@customTypes/*": "./customTypes/*"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^7.0.4",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "fs-extra": "^11.3.2",
+    "handlebars": "^4.7.8",
+    "kafkajs": "^2.2.4",
+    "nodemailer": "^7.0.11",
+    "redis": "^5.10.0"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc && tsc-alias && cp -r templates dist/templates",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.7.1",
+    "@types/swagger-ui-express": "^4.1.8",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}

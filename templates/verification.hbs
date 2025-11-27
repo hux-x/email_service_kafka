@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Verify Your Email</title>
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #007bff;
+      color: white !important;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer {
+      font-size: 12px;
+      color: #777;
+      margin-top: 25px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Hello {{name}},</h2>
+  <p>Welcome to <strong>HostelWalay.pk</strong> 🎉</p>
+
+  <p>
+    Please verify your email address to activate your account.
+  </p>
+
+  <a class="btn" href="https://auth.hostelwalay.pk/verify?token={{token}}&email={{email}}">
+    Verify Email
+  </a>
+
+  <p>If the button doesn't work, use this link:</p>
+  <p style="word-break: break-all;">
+    https://auth.hostelwalay.pk/verify?token={{token}}&email={{email}}
+  </p>
+
+  <div class="footer">
+    If you did not create this account, you can safely ignore this email.
+  </div>
+</div>
+
+</body>
+</html>
